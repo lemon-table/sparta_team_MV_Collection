@@ -38,7 +38,7 @@ const getTodayMovieList = async () => {
 // 이미지 클릭 이벤트 처리
 const movieImage = document.querySelector("#todayMovieList");
 movieImage.addEventListener('click', function(evnet) {
-    location.href=`/html/detail.html?movieId=${evnet.target.id}`;
+    location.href=`./html/detail.html?movieId=${evnet.target.id}`;
 
 });
 
