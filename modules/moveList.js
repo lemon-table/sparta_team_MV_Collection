@@ -22,7 +22,7 @@ const getMovies = async () => {
   result.forEach((infoMovie) => {
     // console.log(result.id, result.title, infoMovie.overview, infoMovie.vote_average, infoMovie.poster_path)
     let temp_html = `
-    <a href="../../html/detail.html?movieId=${infoMovie.id}">
+    <a href="./html/detail.html?movieId=${infoMovie.id}">
     <div class="col">
     <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/${infoMovie.poster_path}" class="card-img-top" alt="...">
