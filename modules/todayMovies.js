@@ -38,11 +38,11 @@ const getTodayMovieList = async () => {
 // 이미지 클릭 이벤트 처리
 const movieImage = document.querySelector("#todayMovieList");
 movieImage.addEventListener('click', function(evnet) {
-    location.href=`detail.html?movieId=${evnet.target.id}`;
+    location.href=`/html/detail.html?movieId=${evnet.target.id}`;
 
 });
 
 getTodayMovieList();
 
-// 오늘의 영화 5초 간격으로 자동 넘김
-setInterval(() => document.querySelector("#todayNext").click() , 5000);
+// 오늘의 영화 3.5초 간격으로 자동 넘김
+setInterval(() => document.querySelector("#todayNext").click() , 3500);
