@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../modules/data.js"></script>
+    <script defer src="../modules/detail.js"></script>
+    <script defer src="../modules/review.js"></script>
+    <link rel="stylesheet" href="../style/styleDetail.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./main.html">무비리스트</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- detail  -->
+        <div class ="detailDiv">
+            <div class="detailImage">
+                <img id="detImage" class="img-fluid" alt="...">
+            </div>
+            <div  class="detailDescription">
+                <h2 id="title" class="fs-1">영화 제목</h2>
+                <p id="release_date" class="fs-6">장르/개봉일</p>
+                <p id="overview" class="fs-5">줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리</p>
+                <p id="vote_average" class="fs-6">평점</p>
+            </div>
+        </div>
+    <!-- detail End-->
+   
+    <!-- review -->
+    <div class ="reviewDiv">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">사용자</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="newName" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">비밀번호</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="newPassword" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+          </div>
+        <div class="mb-3" style="margin-top: 20px;">
+            <textarea class="form-control" id="newReview" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-dark" id="saveBtn" onclick="saveReview()">등록</button>
+    </div>
+
+    <div class ="userReviewDiv">
+    </div>
+    <!-- review End-->
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-body-secondary">© 2023</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Team mate</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">김승태</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">한범석</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">민찬기</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">이동하</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Vlog</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://github.com/iufan1526" class="nav-link p-0 text-body-secondary">https://github.com/iufan1526</a></li>
+                    <li class="nav-item mb-2"><a href="https://lemonlog.tistory.com" class="nav-link p-0 text-body-secondary">https://lemonlog.tistory.com/</a></li>
+                    <li class="nav-item mb-2"><a href="https://velog.io/@snoop930419" class="nav-link p-0 text-body-secondary">https://velog.io/@snoop930419</a></li>
+                    <li class="nav-item mb-2"><a href="https://electronicreviwblog.tistory.com/" class="nav-link p-0 text-body-secondary">https://electronicreviwblog.tistory.com/</a></li>
+ 
+            </div>
+
+        </footer>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>

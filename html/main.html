@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../modules/data.js"></script>
+    <script defer src="../modules/moveList.js"></script>
+    <script defer src="../modules/todayMovies.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">무비리스트</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" id="searchBox" type="search" placeholder="영화제목을 입력하세요." aria-label="Search">
+                <button type="button" onclick="getMovies()" class="btn btn-outline-light">search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- todayMovieContent -->
+    <h1 class="title">TODAY`S MOVIE</h1>
+    <div style="display: flex; justify-content: center;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-interval="true" style="width: 30%;">
+            <div id="todayMovieListBtn" class="carousel-indicators">
+
+            </div>
+            <div id="todayMovieList" class="carousel-inner">
+            </div>
+            <button id="todayPrev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="todayNext" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- todayMovieContent End -->
+
+    <!-- movieListContent -->
+    <div style="overflow-y: scroll; height: 1400px; margin-top: 40px;">
+        <h1 style="text-align: center; font-weight:800;">MOVIE LIST</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 movieBox"> </div>
+    </div>
+    <!-- movieListContent End-->
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-body-secondary">© 2023</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Team mate</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">김승태</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">한범석</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">민찬기</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">이동하</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Vlog</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://github.com/iufan1526"
+                            class="nav-link p-0 text-body-secondary">https://github.com/iufan1526</a></li>
+                    <li class="nav-item mb-2"><a href="https://lemonlog.tistory.com"
+                            class="nav-link p-0 text-body-secondary">https://lemonlog.tistory.com/</a></li>
+                    <li class="nav-item mb-2"><a href="https://velog.io/@snoop930419"
+                            class="nav-link p-0 text-body-secondary">https://velog.io/@snoop930419</a></li>
+                    <li class="nav-item mb-2"><a href="https://electronicreviwblog.tistory.com/"
+                            class="nav-link p-0 text-body-secondary">https://electronicreviwblog.tistory.com/</a>
+                    </li>
+
+            </div>
+
+        </footer>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>
